@@ -1,0 +1,66 @@
+{
+  "name": "devtools",
+  "displayName": "DevTools",
+  "description": "Developer Tools from Mozart",
+  "version": "9.9.3",
+  "publisher": "Ansah_Mozart",
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:devtools.helloWorld"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "devtools.helloWorld",
+        "title": "Enable DevTools"
+      },
+      {
+        "command": "start.timer",
+        "title": "Start Session Timer"
+      },
+      {
+        "command": "end.timer",
+        "title": "End Session Timer"
+      },
+      {
+        "command": "status.timer",
+        "title": "Total time Spent",
+        "description": "Shows the total time spent by the user after opening the whole session on vs code after enabling DevTools"
+      },
+      {
+        "command": "music.health",
+        "title": "Listen Music"
+      },
+      {
+        "command": "stack.open",
+        "title": "open Stack Overflow"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.63.0",
+    "@vscode/test-electron": "^1.6.2",
+    "eslint": "^8.1.0",
+    "glob": "^7.1.7",
+    "mocha": "^9.1.3",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "open": "^8.4.0"
+  }
+}
