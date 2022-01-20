@@ -5,6 +5,7 @@ Developer Tools extension for VSCode with the features for
 * custom timer with History
 * Open stack overflow
 * Listen music for deep concentration
+* Get the history of session timers, also via SMS.
 
 
 Builded during HackdotSlash 5.0
